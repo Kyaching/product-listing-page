@@ -18,7 +18,7 @@ const Product = ({product, setProduct}) => {
 
   const handleCart = () => {
     handleAddToCart();
-    addToDb(product.id);
+    // addToDb(product.id);
   };
   const handleBuy = () => {
     if (product.stock > 50) {
