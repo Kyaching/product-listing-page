@@ -83,7 +83,7 @@ const Products = () => {
   ];
 
   return (
-    <section className="py-6 grid grid-cols-4">
+    <section className="py-6 grid lg:grid-cols-4">
       <div className="m-4">
         <div className="flex items-center">
           <label className="label-text mr-2">Filter by category:</label>
@@ -116,7 +116,7 @@ const Products = () => {
         </div>
       </div>
       <div className="col-span-3">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center">
           <h2 className="text-2xl font-semibold uppercase">
             {filter ? filter : "All"} Products
           </h2>
@@ -137,7 +137,7 @@ const Products = () => {
           </div>
         </div>
         <div className="container flex flex-col justify-center p-4 mx-auto">
-          <div className="grid  gap-2 lg:grid-cols-3">
+          <div className="grid  gap-4 lg:grid-cols-3">
             {filterProducts?.map(product => (
               <Product
                 key={product.id}
